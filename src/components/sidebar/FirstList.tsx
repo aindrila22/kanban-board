@@ -17,7 +17,7 @@ const FirstList = ({list}:Props) => {
     <ul className="flex flex-col space-y-5 w-full text-[#787486] px-4">
       {list.map((item, idx) => {
         return (
-          <>
+          <div key={idx}>
             <li
               key={item.id}
               className="flex items-center space-x-3 cursor-pointer"
@@ -25,7 +25,7 @@ const FirstList = ({list}:Props) => {
               <Image src={item.icon} alt="" width={24} height={24} />
               <span>{item.title}</span>
             </li>
-          </>
+          </div>
         );
       })}
     </ul>

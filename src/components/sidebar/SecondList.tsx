@@ -16,9 +16,9 @@ const SecondList = ({list}:Props) => {
   return (
     <div className="my-4 w-full">
     <ul className="flex flex-col w-full px-4 text-sm">
-      {list.map((item) => {
+      {list.map((item, idx) => {
         return (
-          <>
+          <div key={idx}>
             <li
               key={item.id}
               onMouseEnter={() => setHoveredItemId(item.id)}
@@ -44,7 +44,7 @@ const SecondList = ({list}:Props) => {
                 />
               </div>
             </li>
-          </>
+          </div>
         );
       })}
     </ul>

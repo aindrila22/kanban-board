@@ -1,0 +1,166 @@
+[
+    {
+        "id": "1",
+        "status": "todo",
+        "priority":"low",
+        "title": "Brainstorming",
+        "description": "Brainstorming brings team members' diverse experience into play. ",
+        "comments": 12,
+        "files": 0,
+        "avatars": [
+            {
+                "aId":"1",
+                "src":"/board/Ellipse 12.svg"
+            },
+            {
+                "aId":"2",
+                "src":"/board/Ellipse 13.svg"
+            },
+            {
+                "aId":"3",
+                "src":"/board/Ellipse 15.svg"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "status": "onprogress",
+        "priority":"low",
+        "title": "Onboarding Illustrations",
+        "comments": 14,
+        "files": 15,
+        "images":[
+            {
+                "picId": "1",
+                "src": "/board/onprogress1.svg"
+            }
+        ],
+        "avatars": [
+            {
+                "aId":"4",
+                "src":"/board/Ellipse 12.svg"
+            },
+            {
+                "aId":"5",
+                "src":"/board/Ellipse 13.svg"
+            },
+            {
+                "aId":"6",
+                "src":"/board/Ellipse 15.svg"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "status": "done",
+        "priority":"completed",
+        "title": "Mobile App Design",
+        "comments": 12,
+        "files": 15,
+        "images":[
+            {
+                "picId": "2",
+                "src": "/board/done1.svg"
+            }
+        ],
+        "avatars": [
+            {
+                "aId":"7",
+                "src":"/board/Ellipse 12.svg"
+            },
+            {
+                "aId":"8",
+                "src":"/board/Ellipse 13.svg"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "status": "todo",
+        "priority":"high",
+        "title": "Research",
+        "description":"User research helps you to create an optimal product for users.",
+        "comments": 10,
+        "files": 13,
+        "avatars": [
+            {
+                "aId":"9",
+                "src":"/board/Ellipse 14.svg"
+            },
+            {
+                "aId":"10",
+                "src":"/board/Ellipse 13.svg"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "status": "onprogress",
+        "priority":"low",
+        "title": "Moodboard",
+        "comments": 9,
+        "files": 10,
+        "images":[
+            {
+                "picId": "3",
+                "src": "/board/onprogress1.svg"
+            },
+            {
+                "picId": "4",
+                "src": "/board/onprogress2.svg"
+            }
+        ],
+        "avatars": [
+            {
+                "aId":"11",
+                "src":"/board/Ellipse 12.svg"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "status": "done",
+        "priority":"completed",
+        "title": "Design System",
+        "description":"It just needs to adapt the UI from what you did before ",
+        "comments": 12,
+        "files": 15,
+        "avatars": [
+            {
+                "aId":"12",
+                "src":"/board/Ellipse 12.svg"
+            },
+            {
+                "aId":"13",
+                "src":"/board/Ellipse 13.svg"
+            },
+            {
+                "aId":"14",
+                "src":"/board/Ellipse 15.svg"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "status": "todo",
+        "priority":"high",
+        "title": "Wireframes",
+        "description":"Low fidelity wireframes include the most basic content and visuals. ",
+        "comments": 0,
+        "files": 0,
+        "avatars": [
+            {
+                "aId":"12",
+                "src":"/board/Ellipse 12.svg"
+            },
+            {
+                "aId":"13",
+                "src":"/board/Ellipse 13.svg"
+            },
+            {
+                "aId":"14",
+                "src":"/board/Ellipse 15.svg"
+            }
+        ]
+    }
+]
