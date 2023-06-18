@@ -12,13 +12,13 @@ const Header = () => {
            </div>
            <div className='flex justify-start items-center space-x-4 pt-5'>
              <button className='w-[122px] h-[40px] rounded-md text-[#787486] border border-[#787486]
-              flex justify-center items-center p-2 space-x-3 text-base font-medium'>
+              flex justify-center items-center p-2 space-x-2 text-base font-medium'>
                <Image src="/header/filter.svg" alt="filter" className='cursor-pointer' width={18} height={18}/>
                 <span>Filter</span>
                 <Image src="/header/arrowdown.svg" alt="arrow" className='cursor-pointer' width={18} height={18}/>
              </button>
              <button className='w-[122px] h-[40px] rounded-md text-[#787486] border border-[#787486]
-              flex justify-center items-center p-2 space-x-3 text-base font-medium'>
+              flex justify-center items-center p-2 space-x-2 text-base font-medium'>
                <Image src="/header/calendar.svg" alt="filter" className='cursor-pointer' width={18} height={18}/>
                 <span>Today</span>
                 <Image src="/header/arrowdown.svg" alt="arrow" className='cursor-pointer' width={18} height={18}/>

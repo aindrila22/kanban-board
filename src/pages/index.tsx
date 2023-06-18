@@ -14,7 +14,7 @@ export default function Home() {
   </div>
   <div className='w-full flex flex-col justify-start items-start h-[932px] '>
     <Navbar/>
-    <div className='h-[856px] w-full'>
+    <div className=' w-full pb-10'>
         <Header/>
         <Board/>
     </div>

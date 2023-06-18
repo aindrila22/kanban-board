@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Draggable, Droppable } from 'react-beautiful-dnd'
 import TodoCard from './TodoCard'
+import Image from 'next/image'
 
 type Props = {
     id: TypedColumn,
@@ -17,10 +18,28 @@ const idToColumnText: {
 }
 
 const Column = ({id, todos, index}: Props) => {
+
+    const [bullet, setBullet] = useState<string>("");
+    const [line, setLine] = useState<string>("");
+
+    useEffect(() => {
+        if (id === "todo") {
+          setBullet("/board/bulletpurple.svg");
+          setLine("bg-[#5030E5]");
+        } else if (id === "onprogress") {
+          setBullet("/sidebar/bulletorange.svg");
+          setLine("bg-[#FFA500]")
+        } else {
+          setBullet("/sidebar/bulletgreen.svg");
+          setLine("bg-[#8BC48A]")
+        }
+      }, [id]);
+
+
   return (
     <Draggable draggableId={id} index={index}>
         {(provided) => (
-            <div
+            <div className='max-w-[394px] w-full grid place-items-center bg-[#F5F5F5] rounded-xl py-4'
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             ref={provided.innerRef}
@@ -30,15 +49,18 @@ const Column = ({id, todos, index}: Props) => {
                       <div
                         {...provided.droppableProps}
                         ref={provided.innerRef}
-                        className={`p-2 rounded-2xl shadow-sm
-                        ${snapshot.isDraggingOver ? "bg-green-200": "bg-white/50"}
+                        className={`
+                        ${snapshot.isDraggingOver && "bg-green-200"}
                         `}
                       >
-                            <h2>{idToColumnText[id]}
-                            <span>{todos.length}</span>
-                            </h2>
-
-                            <div className='space-y-2'>
+                          <div className='flex justify-start items-center space-x-2 w-full'>
+                          <Image src={bullet} alt="" width={8} height={8} />
+                          <h2>{idToColumnText[id]} </h2>
+                            <div className='w-[24px] h-[24px] rounded-full bg-[#E0E0E0] text-[#625F6D] text-xs text-center pt-1'>{todos.length}</div>
+                           
+                          </div>
+                          <hr className={`${line} h-[3px] w-full my-4 `}/>
+                            <div className='space-y-2 py-4 '>
                                  {todos.map((todo, index)=>(
                                     <Draggable 
                                     key={todo.id}

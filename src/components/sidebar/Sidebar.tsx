@@ -40,12 +40,12 @@ const list2 = [
   },
   {
     id: 2,
-    src: "/sidebar/bulletyellow.svg",
+    src: "/sidebar/bulletorange.svg",
     title: "Website Redesign",
   },
   {
     id: 3,
-    src: "/sidebar/task-square.svg",
+    src: "/sidebar/bulletpurple.svg",
     title: "Design System",
   },
   {
