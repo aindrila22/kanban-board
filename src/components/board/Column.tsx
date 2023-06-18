@@ -53,13 +53,13 @@ const Column = ({id, todos, index}: Props) => {
                         ${snapshot.isDraggingOver && "bg-green-200"}
                         `}
                       >
-                          <div className='flex justify-start items-center space-x-2 w-full'>
+                          <div className='flex justify-start items-center space-x-2 w-full px-4 xl:px-1'>
                           <Image src={bullet} alt="" width={8} height={8} />
                           <h2>{idToColumnText[id]} </h2>
                             <div className='w-[24px] h-[24px] rounded-full bg-[#E0E0E0] text-[#625F6D] text-xs text-center pt-1'>{todos.length}</div>
                            
                           </div>
-                          <hr className={`${line} h-[3px] w-full my-4 `}/>
+                          <hr className={`${line} h-[3px] w-full my-4`}/>
                             <div className='space-y-2 py-4 '>
                                  {todos.map((todo, index)=>(
                                     <Draggable 
