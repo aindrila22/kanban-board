@@ -35,6 +35,8 @@ const Board = () => {
      const startColIndex = columns[Number(source.droppableId)];
      const finishColIndex = columns[Number(destination.droppableId)];
 
+     if (!startColIndex || !finishColIndex) return;
+
      const startCol: Column = {
       id: startColIndex[0],
       todos: startColIndex[1].todos,

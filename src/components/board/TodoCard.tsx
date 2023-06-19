@@ -5,9 +5,11 @@ import React, { useEffect, useState } from "react";
 import {
   DraggableProvidedDragHandleProps,
   DraggableProvidedDraggableProps,
+  DraggableStateSnapshot,
 } from "react-beautiful-dnd";
 
 type Props = {
+  snapshot:  DraggableStateSnapshot,
   todo: Todo,
   index: number,
   id: TypedColumn,
@@ -19,6 +21,7 @@ type Props = {
 const TodoCard = ({
   todo,
   index,
+  snapshot,
   id,
   innerRef,
   dragHandleProps,
@@ -38,7 +41,7 @@ const TodoCard = ({
 
   return (
     <div key={index}
-      className="bg-white p-3 space-y-2 drop-shadow-sm w-full rounded-lg h-full max-w-[314px] border-2 border-[#F5F5F5]"
+      className={`${snapshot.draggingOver && "bg-[#E9E7F2] border-dashed border border-[#5030E5]" } p-3 bg-white space-y-2 drop-shadow-sm w-full rounded-lg h-full max-w-[314px] border-2 border-[#F5F5F5]`}
       {...dragHandleProps}
       {...draggableProps}
       ref={innerRef}
